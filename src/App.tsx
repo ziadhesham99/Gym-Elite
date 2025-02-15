@@ -9,7 +9,7 @@ import ContactUs from "./pages/contactUs.tsx";
 function App() {
 
   return (
-<BrowserRouter>
+<BrowserRouter basename="/dummy_one">
   <Routes>
   <Route path={"/"} element={<Layout />}>
     <Route index element={<Home />} />
