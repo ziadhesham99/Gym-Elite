@@ -26,11 +26,14 @@ export default function NavBar (){
         scrolled ? 'bg-stone-700 p-3 px-6 lg:px-10' : 'bg-transparent p-6 px-4 md:px-8 lg:px-14'
     }`}
     >
-        <div className={`font-semibold text-2xl lg:text-3xl text-yellow-400`}> Gym Elite</div>
-        <div className={`text-stone-50 ml-auto gap-2 lg:gap-3 flex`}>
-        <Link className={`hover:text-yellow-400`} to ='/'>Home</Link>
-        <Link className={`hover:text-yellow-400`} to ='/about'>About</Link>
-        <Link className={`hover:text-yellow-400`} to ='/services'>Services</Link>
+        <div className={`font-semibold text-2xl lg:text-3xl text-yellow-500`}> Gym Elite</div>
+        <div
+            onClick={()=>window.scrollTo({ top: 0, behavior: "smooth" })}
+            className={`text-stone-50 ml-auto gap-2 lg:gap-3 flex`}>
+        <Link className={`hover:text-yellow-500`} to ='/'>Home</Link>
+        <Link className={`hover:text-yellow-500`} to ='/about'>About</Link>
+        <Link className={`hover:text-yellow-500`} to ='/services'>Services</Link>
+            <Link className={`hover:text-yellow-500`} to ='/contactUs'>Contact Us</Link>
        </div>
     </nav>
     );
